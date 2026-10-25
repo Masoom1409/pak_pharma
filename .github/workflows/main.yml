@@ -50,7 +50,7 @@ jobs:
         working-directory: ${{ steps.locate.outputs.WORKDIR }}
         shell: cmd
         run: |
-          pyinstaller --noconfirm --clean installer\PakPharmaPOS.spec
+          pyinstaller --noconfirm --clean --onedir --windowed --name PakPharmaPOS --paths . --add-data "data;data" --add-data "docs;docs" --hidden-import sqlite3 --hidden-import PySide6.QtCore --hidden-import PySide6.QtGui --hidden-import PySide6.QtWidgets --hidden-import reportlab.graphics.barcode.common --hidden-import reportlab.graphics.barcode.code128 --hidden-import reportlab.graphics.barcode.eanbc --hidden-import reportlab.graphics.barcode.usps --hidden-import openpyxl main.py
 
       - name: 7. Compile Windows Installer (PakPharmaPOS_Setup_v1.0.0.exe) via Inno Setup 6
         working-directory: ${{ steps.locate.outputs.WORKDIR }}
