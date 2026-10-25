@@ -1,0 +1,2 @@
+medicine_name,generic_name,manufacturer,category,dosage_form,strength,pack_size,unit_of_measure,barcode,purchase_price_pkr,sale_price_pkr,min_stock_threshold,batch_number,expiry_date,initial_qty,verification_status,is_sample_record,notes
+Panadol Advance [Example],Paracetamol,Haleon Pakistan Ltd,Analgesic,Tablet,500 mg,10,Tablet,2009900000019,3.40,4.00,50,BATCH-EXAMPLE-01,2028-12-31,100,USER_ENTERED,0,<-- EXAMPLE ROW: clear or replace before importing real shop inventory
