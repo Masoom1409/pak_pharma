@@ -1,0 +1,4 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { font-family: Inter, system-ui, sans-serif; }
+input, select, textarea { outline: none; }
+input:focus, select:focus { border-color: #0f9d8a; box-shadow: 0 0 0 2px rgba(15,157,138,.2); }
